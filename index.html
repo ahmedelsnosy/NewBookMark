@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Img/pngtree-bookmark-icon-vector-illustration-in-filled-style-for-any-purpose-png-image_975418.jpg"
+      type="image/x-icon"
+    />
+    <title>Book Mark</title>
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <div class="container my-5 bg-gradient rounded-5">
+      <div class="row p-5">
+        <h1 class="text-center">
+          <span>B</span> oo <span> K </span>
+          <i class="bookmark fas fa-bookmark"></i> <span>M</span> ar
+          <span>K</span>
+        </h1>
+        <div class="col-md-12 p-5">
+          <label for="nameSite" class="fa-2x m-2">Name</label>
+          <input type="text" class="form-control" id="nameSite" required />
+          <div id="attention" class="my-2 d-none alert alert-danger">
+            You Should start Capital Letter and from 1 to 15 Small Letter
+          </div>
+          <label for="urlSite" class="fa-2x m-2">Url</label>
+          <input type="url" class="form-control" id="urlSite" />
+          <div id="attention2" class="my-2 d-none alert alert-danger">
+            You Should Write Valid Url Such as https://www.google.com.eg/
+          </div>
+          <div id="error" class="my-2 d-none alert alert-danger">
+            Please Fill This Field
+          </div>
+          <button class="btn my-3 float-end" id="send" disabled>
+            Add Book Mark
+          </button>
+          <div class="clearfix"></div>
+          <div class="search">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search by Name Of Website......"
+              id="search"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-5 text-white" id="display"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Js/bootstrap.bundle.js"></script>
+    <script src="Js/main.js"></script>
+  </body>
+</html>
